@@ -1,0 +1,2 @@
+# dotfiles
+Zsh persionalized configuration
