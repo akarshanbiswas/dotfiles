@@ -11,6 +11,14 @@ zstyle :compinstall filename '/home/akarshan/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+if ![ -f "~/powerlevel9k" ]; then
+git clone https://github.com/bhilburn/powerlevel9k.git $HOME/.powerlevel9k
+fi
+
+if ![ -f "/usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]; then
+sudo dnf install -y zsh-syntax-highlighting
+fi
+
 source ~/.powerlevel9k/powerlevel9k.zsh-theme
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Coloured man pages using less as pager
